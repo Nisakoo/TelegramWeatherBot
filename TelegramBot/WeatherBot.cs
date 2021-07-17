@@ -25,9 +25,19 @@ namespace TelegramBot
         private void Client_OnMessage(object sender, MessageEventArgs args)
         {
             string messageText = args.Message.Text;
-            Forecast now = provider.Get(messageText);
+            string response = "";
 
-            client.SendTextMessageAsync(args.Message.Chat.Id, now.ToString());
+            if (messageText == "/service")
+            {
+                response += provider.GetCurrentServiceName();
+            }
+            else
+            {
+                Forecast now = provider.Get(messageText);
+                response += now;
+            }
+
+            client.SendTextMessageAsync(args.Message.Chat.Id, response);
         }
     }
 }

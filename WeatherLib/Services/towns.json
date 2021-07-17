@@ -1,0 +1,7 @@
+{
+  "Москва": "https://xml.meteoservice.ru/export/gismeteo/point/37.xml",
+  "Иркутск": "https://xml.meteoservice.ru/export/gismeteo/point/163.xml",
+  "Киев": "https://xml.meteoservice.ru/export/gismeteo/point/25.xml",
+  "Екатеринбург": "https://xml.meteoservice.ru/export/gismeteo/point/122.xml",
+  "Чебоксары": "https://xml.meteoservice.ru/export/gismeteo/point/31804.xml"
+}

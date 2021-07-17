@@ -10,6 +10,7 @@ namespace TelegramWeatherBot
     {
         private static IWeatherProvider provider;
         private static WeatherBot bot;
+        
         static void Main(string[] args)
         {
             IWeatherService service = new MeteoService();

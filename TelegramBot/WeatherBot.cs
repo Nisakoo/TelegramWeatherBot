@@ -17,7 +17,10 @@ namespace TelegramBot
             client = new TelegramBotClient(token);
 
             client.OnMessage += Client_OnMessage;
+        }
 
+        public void Start()
+        {
             client.StartReceiving();
             Console.ReadLine();
         }

@@ -17,6 +17,7 @@ namespace TelegramWeatherBot
             provider = new WeatherProvider(service);
 
             bot = new(GetTokenFromConfig(), provider);
+            bot.Start();
         }
 
         private static string GetTokenFromConfig()
